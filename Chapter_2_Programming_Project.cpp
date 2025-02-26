@@ -1,5 +1,7 @@
 // Chapter_2_Programming_Project.cpp : This file contains the 'main' function. Program execution begins and ends there.
-//
+/* This Program computes the growth of the ocean levels based 
+on an annual growth rate. It prints these calculated values onthe 
+console*/
 
 #include <iostream>
 
