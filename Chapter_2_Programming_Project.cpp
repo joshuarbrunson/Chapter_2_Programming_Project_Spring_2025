@@ -1,11 +1,22 @@
 // Chapter_2_Programming_Project.cpp : This file contains the 'main' function. Program execution begins and ends there.
-//
+/* This program computes the distance that a car can travel in the town and on
+* the highway based on the provided miles per gallon ratings*/
 
 #include <iostream>
+using namespace std;
 
 int main()
 {
-    std::cout << "Hello World!\n";
+	int tankCapacity = 20; //assign value of tankCapacity
+	double mpgTown = 23.5; //assign value of mpg in town
+	double mpgHighway = 28.9; // assign value of mpg on highway
+
+	double distanceTown = tankCapacity * mpgTown; // calculates the distance the car can travel in the town
+	double distanceHighway = tankCapacity * mpgHighway; // calculates the distance the car travel on the highway
+
+	cout << "A car with a tank capacity of 20 gallons will last " << distanceTown << " miles while driving in the town." << endl; // prints the town distance
+	cout << "A car with a tank capacity of 20 gallons will last " << distanceHighway << " miles while driving on the highway." << endl; //prints the highway distance
+	return 0;
 }
 
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu
